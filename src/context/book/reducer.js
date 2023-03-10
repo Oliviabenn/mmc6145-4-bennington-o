@@ -7,7 +7,7 @@ import {
 } from './actions.js'
 
 
-export default function reducer(prevState {action, payload}){
+export default function reducer(prevState, {action, payload}){
   const {favoriteBooks} = prevState
   let newFavoriteBooks
   switch(action) {
