@@ -15,7 +15,7 @@ export default function reducer(prevState, {action, payload}){
       newFavoriteBooks = [...favoriteBooks, payload]
       saveToLocalStorage(newFavoriteBooks)
       return {...prevState, favoriteBooks: newFavoriteBooks} 
-      
+
     case REMOVE_BOOK:
       newFavoriteBooks = favoriteBooks.filter(book => book.id != payload)
       saveToLocalStorage(newFavoriteBooks)

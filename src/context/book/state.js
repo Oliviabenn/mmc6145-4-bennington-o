@@ -9,7 +9,7 @@ function books() {
 }
 
 const initialState = {
-    bookSearchResulkts: [],
+    bookSearchResults: [],
     favoriteBooks: books()
 }
 
